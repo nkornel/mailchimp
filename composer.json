@@ -3,12 +3,12 @@
   "description": "Mailchimp API wrapper, includes Laravel 5 support.",
   "license": "MIT",
   "autoload": {
-    "psr-4": {"Nkornel\\Mailchimp\\": "src/"}
+    "psr-4": {"NZTim\\Mailchimp\\": "src/"}
   },
   "authors": [
     {
-      "name": "nkornel",
-      "email": "nkornel@outlook.com"
+      "name": "Tim",
+      "email": "tim@nztim.com"
     }
   ],
   "require": {
