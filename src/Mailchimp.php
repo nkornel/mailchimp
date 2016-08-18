@@ -12,7 +12,7 @@ class Mailchimp
     /** @var Writer $logger */
     protected $logger;
 
-    public function __construct(string $apikey, LoggerInterface $logger)
+    public function __construct($apikey, LoggerInterface $logger)
     {
         $this->drewMc = new DrewMMailchimp($apikey);
         $this->error = false;
