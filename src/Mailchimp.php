@@ -56,7 +56,7 @@ class Mailchimp
      * @param string $emailAddress
      * @return bool
      */
-    public function check(string $listId, string $emailAddress) : bool
+    public function check(string $listId, string $emailAddress)
     {
         $result = $this->checkStatus($listId, $emailAddress);
         if($result == 'subscribed' || $result == 'pending') {
@@ -121,7 +121,7 @@ class Mailchimp
      * @param string $listId
      * @return bool
      */
-    protected function checkListExists($listId) : bool
+    protected function checkListExists($listId)
     {
         $endpoint = "lists/{$listId}";
         $response = $this->callApi('get', $endpoint);
@@ -163,7 +163,7 @@ class Mailchimp
         return $response;
     }
 
-    protected function errorResponse($message) : bool
+    protected function errorResponse($message)
     {
         $this->error = $message;
         $this->logger->error($message);
