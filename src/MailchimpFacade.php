@@ -1,5 +1,5 @@
 <?php
-namespace NZTim\Mailchimp;
+namespace NKornel\Mailchimp;
 
 use Illuminate\Support\Facades\Facade;
 

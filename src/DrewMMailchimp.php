@@ -1,4 +1,4 @@
-<?php namespace NZTim\Mailchimp;
+<?php namespace NKornel\Mailchimp;
 
 /**
  * Super-simple, minimum abstraction MailChimp API v3 wrapper
