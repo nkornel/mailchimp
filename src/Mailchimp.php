@@ -26,7 +26,7 @@ class Mailchimp
      * @param string $emailAddress
      * @return string|false response or error
      */
-    public function checkStatus(string $listId, string $emailAddress)
+    public function checkStatus($listId, $emailAddress)
     {
         // Check the list exists
         if(!$this->checkListExists($listId)) {
@@ -56,7 +56,7 @@ class Mailchimp
      * @param string $emailAddress
      * @return bool
      */
-    public function check(string $listId, string $emailAddress)
+    public function check($listId, $emailAddress)
     {
         $result = $this->checkStatus($listId, $emailAddress);
         if($result == 'subscribed' || $result == 'pending') {
@@ -81,7 +81,7 @@ class Mailchimp
      * @param bool|false $confirm
      * @return bool
      */
-    public function subscribe(string $listId, string $emailAddress, array $mergeFields = [], bool $confirm = false)
+    public function subscribe($listId , $emailAddress, $mergeFields = [], $confirm = false)
     {
         // Check the list exists
         if(!$this->checkListExists($listId)) {
